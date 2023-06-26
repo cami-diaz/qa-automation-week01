@@ -1,4 +1,4 @@
-import { createUser, getUserData, deleteUser } from '../utils/apiCommands.js';
+import { createUser, getUserData, deleteUser } from '../utils/apiCommands.ts';
 
 describe ('API commands', () => {
     let userId: number;
