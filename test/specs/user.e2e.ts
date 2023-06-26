@@ -9,17 +9,20 @@ describe ('API commands', () => {
 });
     it ('Post command', async () => {
         const user = {
-            name: 'Test Automation',
-            email: 'qa@testing.com',
+            name: 'Automation',
+            email: 'qa@automation.com',
     };
     await createUser(user);
-    userId= 1;
+    userId= 10;
+
 });
     it ('Get command', async () => {
         const userData = await getUserData(userId);
         userEmail = userData.email;
+        const userName = userData.name;
 
-        console.log("User Email:", await userEmail);
+        console.log("Email:", await userEmail);
+        console.log("Name:", await userName);
 });
 
 });
